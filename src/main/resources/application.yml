@@ -12,12 +12,6 @@ spring:
     hibernate:
       ddl-auto: update        # Automatically create/validate schema
     database-platform: org.hibernate.dialect.H2Dialect
-  # Logging Configuration
-logging:
-  level:
-    org:
-      springframework:
-        web: DEBUG            # Enable debug logging for web requests
 
 server:
   port: 8080
