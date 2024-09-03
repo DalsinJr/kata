@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:test
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  h2:
+    console:
+      enabled: true           # Enable H2 console
+      path: /h2-console       # Path to access the H2 console
+  jpa:
+    hibernate:
+      ddl-auto: update        # Automatically create/validate schema
+    database-platform: org.hibernate.dialect.H2Dialect
+  # Logging Configuration
+logging:
+  level:
+    org:
+      springframework:
+        web: DEBUG            # Enable debug logging for web requests
+
+server:
+  port: 8080
